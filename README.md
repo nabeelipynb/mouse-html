@@ -7,7 +7,7 @@
 
 Paste this right in your html:
 ```html
-<script src="https://unpkg.com/mouse-html@1.0.0/index.js" type="module" defer></script>
+<script src="https://unpkg.com/mouse-html@1.0.1" type="module" defer></script>
 ```
 
 ## 🚀 Features
