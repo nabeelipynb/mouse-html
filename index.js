@@ -1,11 +1,34 @@
-export function utilClick() {
-    //creating the .hidden class
-    const style = document.createElement('style')
+export function utilEffectX() {
+    //creating the necessary styles in the head <style></style> tag
+    const style = document.createElement('style');
 
-    style.innerHTML = '.hidden { display: none; }'
+    style.innerHTML = `
+    
+            .hidden {
+                display: none;
+            }
+    
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+    
+                to {
+                    opacity: 1;
+                }
+            }
+    
+            .fade {
+                animation: fadeIn 0.25s ease-in forwards;
+            }
+
+
+    `
 
     document.head.appendChild(style)
+}
 
+export function utilClick() {
     //selecting element with the click attribute
     let anchors = document.querySelectorAll(`[mouse-click]`);
 
@@ -32,13 +55,6 @@ export function utilClick() {
 
 
 export function utilHover() {
-    //creating the .hidden class
-    const style = document.createElement('style')
-
-    style.innerHTML = '.hidden { display: none; }'
-
-    document.head.appendChild(style)
-
     //selecting element with the hover attribute
     let anchors = document.querySelectorAll(`[mouse-hover]`);
 
@@ -72,5 +88,19 @@ export function utilHover() {
     }
 }
 
+export function utilAnimation() {
+    let animation_elements = document.querySelectorAll(`[animation]`)
+
+    animation_elements.forEach(anime => {
+        let animation = anime.getAttribute('animation');
+
+        if (animation == 'fade') {
+            anime.classList.add('fade');
+        }
+    })
+}
+
+utilEffectX()
 utilClick()
 utilHover()
+utilAnimation()
