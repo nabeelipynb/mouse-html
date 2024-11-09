@@ -82,7 +82,7 @@ You can also create your own custom CSS animations such as:
   animation: pulse 0.6s cubic-bezier(0.5, 1.5, 0.5, 1) forwards;
 }
 ```
-⚠ **Note:** The animation only applies to the `element when it appears` in the DOM.
+⚠ **Note:** The animation only applies to the element when it **appears** in the DOM.
 
 ## 🔗 Links
 
