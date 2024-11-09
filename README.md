@@ -22,12 +22,15 @@ The value inside the attribute is the `document.querySelector()` property, and s
 
 ```html
 <button mouse-click=".box">Show Div</button>
-<div class="box">just a div</div>
+<div class="box">just a div with a class</div>
+```
 
-
+```html
 <button mouse-click="#box">Show Div</button>
-<div id="box">just a div</div>
+<div id="box">just a div with an id</div>
+```
 
+```html
 <button mouse-click="div">Show Div</button>
 <div>just a div</div>
 ```
