@@ -7,7 +7,7 @@
 
 Paste this right in your html:
 ```html
-<script src="https://unpkg.com/mouse-html@1.0.2" type="module" defer></script>
+<script src="https://unpkg.com/mouse-html@1.0.3" type="module" defer></script>
 ```
 
 ## 🚀 Features
@@ -81,7 +81,7 @@ You can also create your own custom CSS animations such as:
     100% {
         transform: scale(1);
     }
-    
+
 }
 
 .spring {
