@@ -12,6 +12,8 @@ Paste this right in your html:
 
 ## 🚀 Features
 
+### 🖱 Mouse Effects
+
 Add a `mouse-click` or `mouse-hover` attribute to your html element:
 
 ```html
@@ -36,6 +38,8 @@ The value inside the attribute is the `document.querySelector()` property, and s
 ```
 
 A hidden class `.hidden { display: none }` automatically gets added to the element specified in the attributes.
+
+### 🎉 Animations
 
 ## 🔗 Links
 
