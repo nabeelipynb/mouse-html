@@ -18,6 +18,13 @@ Add a `mouse-click` or `mouse-hover` attribute to your html element:
 <button mouse-hover=".box">Show Div</button>
 ```
 
+The value inside the attribute is the document.queryselector() property, and selects the DOM element that matches:
+
+```html
+<button mouse-hover=".box">Show Div</button>
+<div class="box">just a div</div>
+```
+
 ## Installation
 
 To install the package, run:
