@@ -59,30 +59,29 @@ You can also create your own custom CSS animations such as:
 ```
 
 ```css
-@keyframes spring {
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.2);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  70% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .pulse {
-  display: inline-block;
-  animation: spring 0.6s cubic-bezier(0.5, 1.5, 0.5, 1) forwards;
+  animation: pulse 0.6s cubic-bezier(0.5, 1.5, 0.5, 1) forwards;
 }
 ```
-⚠ **Note:** The animations only apply to the element when they appear `in` the DOM.
+⚠ **Note:** The animation only applies to the `element when it appears` in the DOM.
 
 ## 🔗 Links
 
