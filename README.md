@@ -41,7 +41,7 @@ A hidden class `.hidden { display: none }` automatically gets added to the eleme
 
 ### 🎉 Animations
 
-Add an `animation` attribute to the element that is being reffered to in the attribute:
+Add an `animation` attribute to the element that is being referred to in the attribute:
 
 ```html
 <button mouse-hover=".box">Click me</button>
@@ -52,7 +52,7 @@ This adds an CSS animation effect to the element. The animation effects currentl
 
 1. fade
 
-You can also create your own custom CSS animations such as:
+You can also create your own custom CSS animations:
 
 ```html
 <button mouse-hover=".box">Click me</button>
@@ -88,7 +88,7 @@ You can also create your own custom CSS animations such as:
   animation: spring 0.6s cubic-bezier(0.5, 1.5, 0.5, 1) forwards;
 }
 ```
-🚦 **Note:** The animation only applies to the element when it **appears** in the DOM. By default the animation-duration is set to `0.25s`.
+✋ **WAIT:** The animation only applies to the element when it **appears** in the DOM. By default the animation-duration is set to `0.25s`.
 
 ## 🔗 Links
 
