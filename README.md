@@ -3,11 +3,11 @@
 ⚡ A simple and lightweight npm package for giving your elements click and hover functionality right in your html.
 
 
-## 🌍 Installation (version 1.0.1@latest)
+## 🌍 Installation
 
 Paste this right in your html:
 ```html
-<script src="https://unpkg.com/mouse-html@1.0.1" type="module" defer></script>
+<script src="https://unpkg.com/mouse-html@1.0.2" type="module" defer></script>
 ```
 
 ## 🚀 Features
