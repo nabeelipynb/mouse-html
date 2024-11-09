@@ -1,9 +1,10 @@
 {
-  "name": "mouse-utils",
+  "name": "mouse-html",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "author": "Nabeel Sadiq",
+  "keywords": ["mouse", "html", "javascript"],
   "license": "ISC",
-  "description": "📦 Simple click and hover mouse-utils right in your html"
+  "description": "📦 Simple click and hover functionality right in your html"
 }
