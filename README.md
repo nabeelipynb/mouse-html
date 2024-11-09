@@ -41,7 +41,7 @@ A hidden class `.hidden { display: none }` automatically gets added to the eleme
 
 ### 🎉 Animations
 
-Add an `animation` attribute to the element that is being worked upon:
+Add an `animation` attribute to the element that is being reffered to in the attribute:
 
 ```html
 <button mouse-hover=".box">Click me</button>
@@ -49,7 +49,8 @@ Add an `animation` attribute to the element that is being worked upon:
 ```
 
 This adds an CSS animation effect to the element. The animation effects currently available are:<br>
-- fade
+
+1. fade
 
 You can also create your own custom CSS animations such as:
 
