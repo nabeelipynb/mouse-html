@@ -25,5 +25,8 @@ The value inside the attribute is the `document.queryselector()` property, and s
 <div class="box">just a div</div>
 ```
 
-A hidden class (display: none) automatically gets added to the element specified in the attributes.
+A hidden class `.hidden { display: none }` automatically gets added to the element specified in the attributes.
 
+## 🔗Links
+
+**NPM:** https://www.npmjs.com/package/mouse-html
