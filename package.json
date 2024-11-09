@@ -1,0 +1,9 @@
+{
+  "name": "mouse-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "author": "Nabeel Sadiq",
+  "license": "ISC",
+  "description": "📦 Simple click and hover mouse-utils right in your html"
+}
