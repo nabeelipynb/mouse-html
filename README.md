@@ -3,7 +3,7 @@
 ⚡ A simple and lightweight npm package for giving your elements click and hover functionality right in your html.
 
 
-## 💡 Installation
+## 🌍 Installation
 
 Paste this right in your html:
 ```html
@@ -18,16 +18,12 @@ Add a `mouse-click` or `mouse-hover` attribute to your html element:
 <button mouse-hover=".box">Show Div</button>
 ```
 
-The value inside the attribute is the document.queryselector() property, and selects the DOM element that matches:
+The value inside the attribute is the `document.queryselector()` property, and selects the DOM element that matches:
 
 ```html
 <button mouse-hover=".box">Show Div</button>
 <div class="box">just a div</div>
 ```
 
-## Installation
+A hidden class (display: none) automatically gets added to the element specified in the attributes.
 
-To install the package, run:
-
-```bash
-npm install mouse-html
