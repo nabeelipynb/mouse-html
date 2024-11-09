@@ -27,6 +27,6 @@ The value inside the attribute is the `document.queryselector()` property, and s
 
 A hidden class `.hidden { display: none }` automatically gets added to the element specified in the attributes.
 
-## 🔗Links
+## 🔗 Links
 
-**NPM:** https://www.npmjs.com/package/mouse-html
+📦 **NPM:** https://www.npmjs.com/package/mouse-html
