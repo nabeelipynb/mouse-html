@@ -6,7 +6,7 @@
 ## 💡 Installation
 
 Paste this right in your html:
-```bash
+```html
 <script src="https://unpkg.com/mouse-html@1.0.0/index.js" type="module" defer></script>
 ```
 
@@ -14,7 +14,7 @@ Paste this right in your html:
 
 Add a `mouse-click` or `mouse-hover` attribute to your html element:
 
-```bash
+```html
 <button mouse-hover=".box">Show Div</button>
 ```
 
