@@ -56,11 +56,11 @@ You can also create your own custom CSS animations such as:
 
 ```html
 <button mouse-hover=".box">Click me</button>
-<div class="box" animation="pulse">just a div with animation</div>
+<div class="box" animation="spring">just a div with animation</div>
 ```
 
 ```css
-@keyframes pulse {
+@keyframes spring {
     0% {
         transform: scale(1);
     }
@@ -78,11 +78,11 @@ You can also create your own custom CSS animations such as:
     }
 }
 
-.pulse {
-  animation: pulse 0.6s cubic-bezier(0.5, 1.5, 0.5, 1) forwards;
+.spring {
+  animation: spring 0.6s cubic-bezier(0.5, 1.5, 0.5, 1) forwards;
 }
 ```
-⚠ **Note:** The animation only applies to the element when it **appears** in the DOM.
+🚦 **Note:** The animation only applies to the element when it **appears** in the DOM. By default the animation-duratio is set to `0.25s`.
 
 ## 🔗 Links
 

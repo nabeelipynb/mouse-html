@@ -94,9 +94,7 @@ export function utilAnimation() {
     animation_elements.forEach(anime => {
         let animation = anime.getAttribute('animation');
 
-        if (animation == 'fade') {
-            anime.classList.add('fade');
-        }
+        anime.classList.add(animation);
     })
 }
 
