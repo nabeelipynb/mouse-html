@@ -18,11 +18,18 @@ Add a `mouse-click` or `mouse-hover` attribute to your html element:
 <button mouse-hover=".box">Show Div</button>
 ```
 
-The value inside the attribute is the `document.queryselector()` property, and selects the DOM element that matches:
+The value inside the attribute is the `document.querySelector()` property, and selects the DOM element that matches:
 
 ```html
-<button mouse-hover=".box">Show Div</button>
+<button mouse-click=".box">Show Div</button>
 <div class="box">just a div</div>
+
+
+<button mouse-click="#box">Show Div</button>
+<div id="box">just a div</div>
+
+<button mouse-click="div">Show Div</button>
+<div>just a div</div>
 ```
 
 A hidden class `.hidden { display: none }` automatically gets added to the element specified in the attributes.
