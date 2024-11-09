@@ -1,4 +1,5 @@
-# 🖱 mouse-html ### v 1.0.1
+# 🖱 mouse-html
+### v1.0.1
 
 ⚡ A simple and lightweight npm package for giving your elements click and hover functionality right in your html.
 
