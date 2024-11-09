@@ -40,3 +40,4 @@ A hidden class `.hidden { display: none }` automatically gets added to the eleme
 ## 🔗 Links
 
 📦 **NPM:** https://www.npmjs.com/package/mouse-html
+📦 **GITHUB:** https://github.com/nabeelipynb/mouse-utils
