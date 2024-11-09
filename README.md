@@ -3,7 +3,7 @@
 ⚡ A simple and lightweight npm package for giving your elements click and hover functionality right in your html.
 
 
-## 🌍 Installation (version 1.0.1)
+## 🌍 Installation (version 1.0.1@latest)
 
 Paste this right in your html:
 ```html
