@@ -54,9 +54,9 @@ This attribute creates a swapping relationship between the element with the attr
 <div id="box">Click Me to hide me, and show the button</div>
 ```
 
-The element that has then `mouse-swap` attribute is initially visible, while the element specified in the attributes, which gets accessed by `document.querySelector()` is initially hidden.
+The element that has then `mouse-swap` attribute is initially visible, while the element specified in the attributes is initially hidden.
 
-## 🎉 Animations
+### 🎉 Animations
 
 You can add a `mouse-animation` attribute to an element in the DOM:
 
