@@ -1,8 +1,8 @@
+const style = document.createElement('style');
 export function utilEffectX() {
     //creating the necessary styles in the head <style></style> tag
-    const style = document.createElement('style');
 
-    style.innerHTML = `
+    style.innerHTML += `
     
             .hidden {
                 display: none;
@@ -16,6 +16,18 @@ export function utilEffectX() {
                 to {
                     opacity: 1;
                 }
+            }
+
+            @keyframes X { from { transform: translateX(100px); } to { transform: translateX(0); } }
+
+            @keyframes Y { from { transform: translateY(100px); } to { transform: translateY(0); } }
+
+            .X {
+                animation: X 0.3s ease forwards;
+            }
+
+            .Y {
+                animation: Y 0.3s ease forwards;
             }
     
             .fade {
@@ -89,14 +101,56 @@ export function utilHover() {
 }
 
 export function utilAnimation() {
-    let animation_elements = document.querySelectorAll(`[mouse-animation]`)
+    let animation_elements = document.querySelectorAll(`[mouse-animation]`);
 
     animation_elements.forEach(anime => {
         let animation = anime.getAttribute('mouse-animation');
+        
+        if (animation == 'X') {
+        let animation_length = anime.getAttribute('mouse-animation-length');
 
-        anime.classList.add(animation);
-    })
+        console.log(style.innerHTML)
+
+        if (animation_length) {
+            style.innerHTML = style.innerHTML.replace(
+                `@keyframes X { from { transform: translateX(100px); } to { transform: translateX(0); } }`,
+                `@keyframes X { from { transform: translateX(${animation_length}px); } to { transform: translateX(0); } }`
+            );
+
+            console.log(style.innerHTML)
+        }
+
+            anime.classList.add(animation);
+        }
+
+        else if (animation == "Y") {
+            let animation_length = anime.getAttribute('mouse-animation-length');
+
+        console.log(style.innerHTML)
+
+        if (animation_length) {
+            style.innerHTML = style.innerHTML.replace(
+                `@keyframes Y { from { transform: translateY(100px); } to { transform: translateY(0); } }`,
+                `@keyframes Y { from { transform: translateY(${animation_length}px); } to { transform: translateY(0); } }`
+            );
+
+            console.log(style.innerHTML)
+        }
+
+            anime.classList.add(animation);
+        }
+
+        else if (animation == "fade") {
+            anime.classList.add('fade')
+        }
+
+        else {
+            anime.classList.add(animation)
+        }
+    });
 }
+
+
 
 export function utilSwap() {
     //grabbing all elements with that attribute
