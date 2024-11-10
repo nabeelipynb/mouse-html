@@ -1,116 +1,101 @@
+
 # 🖱 mouse-html
 
-⚡ A simple and lightweight npm package for giving your elements click and hover functionality right in your html. It allows you to create simple dropdowns or sidebars right inside your html without having to write a single line of javascript.
-
+⚡ A simple, lightweight npm package for adding click and hover functionality to your HTML elements. This package allows you to create basic dropdowns or sidebars directly in your HTML without needing to write a single line of JavaScript.
 
 ## 🌍 Installation
 
-Paste this right in your html:
+Add this script to your HTML:
+
 ```html
-<script src="https://unpkg.com/mouse-html@1.1.15" type="module" defer></script>
+<script src="https://unpkg.com/mouse-html@1.1.2" type="module" defer></script>
 ```
 
 ## 🚀 Features
 
 ### 🖱 Mouse Click and Hover
 
-Add a `mouse-click` or `mouse-hover` attribute to your html element:
+Add a `mouse-click` or `mouse-hover` attribute to an HTML element:
 
 ```html
 <button mouse-hover=".box">Show Div</button>
 ```
 
-The value inside the attribute is the `document.querySelector()` property, and selects the DOM element that matches:
+The attribute's value is a `document.querySelector()` selector that targets the corresponding DOM element:
 
 ```html
 <button mouse-click=".box">Show Div</button>
-<div class="box">just a div with a class</div>
+<div class="box">Just a div with a class</div>
 ```
 
 ```html
 <button mouse-click="#box">Show Div</button>
-<div id="box">just a div with an id</div>
+<div id="box">Just a div with an ID</div>
 ```
 
 ```html
 <button mouse-click="div">Show Div</button>
-<div>just a div</div>
+<div>Just a div</div>
 ```
 
-A hidden class `.hidden { display: none }` automatically gets added to the element specified in the attributes.
+A `.hidden { display: none; }` class is automatically added to the element specified in the attribute, making it initially hidden.
 
 ### ✨ Mouse Swap
 
-Add a `mouse-swap` attribute to your html element:
+Add a `mouse-swap` attribute to an HTML element:
 
 ```html
 <button mouse-swap=".box">Show Div</button>
 ```
 
-This attribute creates a swapping `onclick` relationship between the element with the attribute and the element specified inside the attribute:
+This attribute creates a *click-to-swap* relationship between the element with the attribute and the specified target element:
 
 ```html
-<button mouse-swap="#box">Click me to hide me, and show the div</button>
-<div id="box">Click Me to hide me, and show the button</div>
+<button mouse-swap="#box">Click me to hide me and show the div</button>
+<div id="box">Click me to hide me and show the button</div>
 ```
 
-The element that has then `mouse-swap` attribute is initially visible, while the element specified in the attributes is initially hidden.
+The element with the `mouse-swap` attribute is initially visible, while the target element starts off hidden.
 
 ### 🎉 Animations
 
-You can add a `mouse-animation` attribute to an element in the DOM:
+Add a `mouse-animation` attribute to any element in the DOM:
 
 ```html
-<div class="box" animation="fade">just a div with animation</div>
+<div class="box" mouse-animation="fade">Just a div with animation</div>
 ```
 
-This adds an CSS animation effect to the element, which applies to the element only when it *appears* in the DOM. You can add this attribute to any element or combine with the other attributes. By default each animation has its own animation-timing which cannot be changed. The animations currently available are:<br>
+This adds a CSS animation effect that triggers when the element *appears* in the DOM. You can apply this attribute to any element or combine it with other attributes. Each animation has its own default timing, which cannot be changed. Available animations include:
 
-1. fade
-2. X
-3. Y
+1. **fade**
+2. **X**
+3. **Y**
 
-X and Y animations also take a optional `mouse-animation-length` attribute in which you set the number of pixels the element travels - the pixel value can be both *positive* and *negative*:
+The X and Y animations also accept an optional `mouse-animation-length` attribute, where you can set the number of pixels the element travels. This pixel value can be *positive* or *negative*:
 
 ```html
-<button mouse-swap="div">Click Me to see div, and hide me</button>
-<div mouse-animation="fade">Click Me to hide me, and see the button again</div>
+<button mouse-swap="div">Click me to see the div and hide me</button>
+<div mouse-animation="fade">Click me to hide me and see the button again</div>
 ```
 
 ```html
-<button mouse-click=".box">Click Me to see div, and hide me</button>
-<div class="box" mouse-animation="X" mouse-animation-length="-500">I translate X by 500 pixels</div>
+<button mouse-click=".box">Click me to see the div and hide me</button>
+<div class="box" mouse-animation="X" mouse-animation-length="-500">I translate X by -500 pixels</div>
 ```
 
 You can also create custom CSS animations:
 
 ```html
-<div class="box" animation="spring">just a div with animation</div>
+<div class="box" mouse-animation="spring">Just a div with animation</div>
 ```
 
 ```css
 @keyframes spring {
-
-    0% {
-        transform: scale(1);
-    }
-
-    30% {
-        transform: scale(1.2);
-    }
-    
-    50% {
-        transform: scale(0.9);
-    }
-
-    70% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-
+    0% { transform: scale(1); }
+    30% { transform: scale(1.2); }
+    50% { transform: scale(0.9); }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 .spring {
@@ -120,5 +105,5 @@ You can also create custom CSS animations:
 
 ## 🔗 Links
 
-📦 **NPM:** https://www.npmjs.com/package/mouse-html<br>
-🐱‍👤 **GITHUB:** https://github.com/nabeelipynb/mouse-utils
+📦 **NPM:** https://www.npmjs.com/package/mouse-html
+🐱‍👤 **GitHub:** https://github.com/nabeelipynb/mouse-utils
