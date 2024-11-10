@@ -1,13 +1,13 @@
 # 🖱 mouse-html
 
-⚡ A simple and lightweight npm package for giving your elements click and hover functionality right in your html.
+⚡ A simple and lightweight npm package for giving your elements click and hover functionality right in your html. It allows you to create simple dropdowns or sidebars right inside your html without having to write a single line of javascript.
 
 
 ## 🌍 Installation
 
 Paste this right in your html:
 ```html
-<script src="https://unpkg.com/mouse-html@1.1.1" type="module" defer></script>
+<script src="https://unpkg.com/mouse-html@1.1.15" type="module" defer></script>
 ```
 
 ## 🚀 Features
@@ -64,13 +64,13 @@ You can add a `mouse-animation` attribute to an element in the DOM:
 <div class="box" animation="fade">just a div with animation</div>
 ```
 
-This adds an CSS animation effect to the element, which applies to the element only when it *appears* in the DOM. You can add this attribute to any element or combine with the other attributes. By default each animation has its own animation-timing ehich cannot be changed. The animations currently available are:<br>
+This adds an CSS animation effect to the element, which applies to the element only when it *appears* in the DOM. You can add this attribute to any element or combine with the other attributes. By default each animation has its own animation-timing which cannot be changed. The animations currently available are:<br>
 
 1. fade
 2. X
 3. Y
 
-X and Y animation also take an `mouse-animation-length` attribute in which you set the number of pixels the element travels - the pixel value can be both *positive* and *negative*:
+X and Y animations also take a optional `mouse-animation-length` attribute in which you set the number of pixels the element travels - the pixel value can be both *positive* and *negative*:
 
 ```html
 <button mouse-swap="div">Click Me to see div, and hide me</button>
@@ -79,10 +79,10 @@ X and Y animation also take an `mouse-animation-length` attribute in which you s
 
 ```html
 <button mouse-click=".box">Click Me to see div, and hide me</button>
-<div class="box" mouse-animation="X" mouse-animation-length="-500">Click Me to hide me, and see the button again</div> <!-- The div here translates X by -500px` -->
+<div class="box" mouse-animation="X" mouse-animation-length="-500">I translate X by 500 pixels</div>
 ```
 
-You can also create your own custom CSS animations:
+You can also create custom CSS animations:
 
 ```html
 <div class="box" animation="spring">just a div with animation</div>
