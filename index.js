@@ -89,16 +89,43 @@ export function utilHover() {
 }
 
 export function utilAnimation() {
-    let animation_elements = document.querySelectorAll(`[animation]`)
+    let animation_elements = document.querySelectorAll(`[mouse-animation]`)
 
     animation_elements.forEach(anime => {
-        let animation = anime.getAttribute('animation');
+        let animation = anime.getAttribute('mouse-animation');
 
         anime.classList.add(animation);
     })
+}
+
+export function utilSwap() {
+    //grabbing all elements with that attribute
+    let old = document.querySelectorAll(`[mouse-swap]`);
+    old.forEach(ol => {
+        //get value of that attribute
+        let val = ol.getAttribute('mouse-swap')
+        let young = document.querySelector(val)
+        //add hidden class to the element being referred to
+        young.classList.add('hidden')
+        
+        ol.addEventListener('click', () => {
+            ol.classList.toggle('hidden');
+            young.classList.toggle('hidden')
+        })
+        
+        young.addEventListener('click', () => {
+            ol.classList.toggle('hidden');
+            young.classList.toggle('hidden')
+        })
+
+    })
+
+
+
 }
 
 utilEffectX()
 utilClick()
 utilHover()
 utilAnimation()
+utilSwap()

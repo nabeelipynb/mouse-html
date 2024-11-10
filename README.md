@@ -12,7 +12,7 @@ Paste this right in your html:
 
 ## 🚀 Features
 
-### 🖱 Mouse Effects
+### 🖱 Mouse Click and Hover
 
 Add a `mouse-click` or `mouse-hover` attribute to your html element:
 
@@ -38,6 +38,23 @@ The value inside the attribute is the `document.querySelector()` property, and s
 ```
 
 A hidden class `.hidden { display: none }` automatically gets added to the element specified in the attributes.
+
+### Mouse Swap
+
+Add a `mouse-swap` attribute to your html element:
+
+```html
+<button mouse-swap=".box">Show Div</button>
+```
+
+This attribute creates a swapping relationship between the element with the attribute and the element specified inside the attribute:
+
+```html
+<button mouse-swap="#box">Click me to hide me, and show the div</button>
+<div id="box">Click Me to hide me, and show the button</div>
+```
+
+The element that has then `mouse-swap` attribute is initially visible, while the element specified in the attributes, which gets accessed by `document.querySelector()` is initially hidden.
 
 ### 🎉 Animations
 
