@@ -8,7 +8,7 @@
 Add this script to your HTML:
 
 ```html
-<script src="https://unpkg.com/mouse-html@1.1.22" type="module" defer></script>
+<script src="https://unpkg.com/mouse-html@1.1.3" type="module" defer></script>
 ```
 
 ## 🚀 Features
@@ -106,4 +106,4 @@ You can also create custom CSS animations:
 ## 🔗 Links
 
 📦 **NPM:** https://www.npmjs.com/package/mouse-html<br>
-🐱‍👤 **GitHub:** https://github.com/nabeelipynb/mouse-utils
+🐱‍👤 **GitHub:** https://github.com/nabeelipynb/mouse-html
