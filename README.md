@@ -39,7 +39,7 @@ The value inside the attribute is the `document.querySelector()` property, and s
 
 A hidden class `.hidden { display: none }` automatically gets added to the element specified in the attributes.
 
-### Mouse Swap
+### ✨ Mouse Swap
 
 Add a `mouse-swap` attribute to your html element:
 
@@ -56,23 +56,21 @@ This attribute creates a swapping relationship between the element with the attr
 
 The element that has then `mouse-swap` attribute is initially visible, while the element specified in the attributes, which gets accessed by `document.querySelector()` is initially hidden.
 
-### 🎉 Animations
+## 🎉 Animations
 
-Add an `animation` attribute to the element that is being referred to in the attribute:
+You can add a `mouse-animation` attribute to an element in the DOM:
 
 ```html
-<button mouse-hover=".box">Click me</button>
 <div class="box" animation="fade">just a div with animation</div>
 ```
 
-This adds an CSS animation effect to the element. The animation effects currently available are:<br>
+This adds an CSS animation effect to the element, which applies to the element only when it *appears* in the DOM. You can add this attribute to any element or combine with the other attributes. By default each animation has its own animation-timing ehich cannot be changed. The animation effects currently available are:<br>
 
 1. fade
 
 You can also create your own custom CSS animations:
 
 ```html
-<button mouse-hover=".box">Click me</button>
 <div class="box" animation="spring">just a div with animation</div>
 ```
 
@@ -105,7 +103,6 @@ You can also create your own custom CSS animations:
   animation: spring 0.6s cubic-bezier(0.5, 1.5, 0.5, 1) forwards;
 }
 ```
-✋ **WAIT:** The animation only applies to the element when it **appears** in the DOM. By default the animation-duration is set to `0.25s`.
 
 ## 🔗 Links
 
